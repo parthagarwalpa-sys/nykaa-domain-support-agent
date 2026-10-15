@@ -1,0 +1,23 @@
+{
+  "total_records": 40,
+  "seed": 20261013,
+  "category_counts": {
+    "Footwear": 12,
+    "Apparel": 6,
+    "Home": 13,
+    "Electronics": 6,
+    "Beauty": 3
+  },
+  "status_counts": {
+    "Shipped": 8,
+    "Delivered": 17,
+    "Refunded": 7,
+    "Returned": 5,
+    "Placed": 3
+  },
+  "delayed_count": 9,
+  "delayed_percentage": 22.5,
+  "order_value_min_inr": 961,
+  "order_value_max_inr": 24999,
+  "order_value_range_inr": [299, 24999]
+}

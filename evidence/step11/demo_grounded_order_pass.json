@@ -1,0 +1,13 @@
+{
+  "guardrail_blocked": false,
+  "structured_response": {
+    "answer": "Order NYK-20261013-0005 is Shipped (value 16336 INR, escalation_score=0.9067).",
+    "escalation_score": 0.9067,
+    "fallback": false,
+    "order_value_inr": 16336,
+    "record_id": "NYK-20261013-0005",
+    "response_type": "order",
+    "sources": [],
+    "status": "Shipped"
+  }
+}

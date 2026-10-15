@@ -1,0 +1,51 @@
+{
+  "schema": {
+    "name": "SupportCrewResponse",
+    "fields": {
+      "answer": "<class 'str'>",
+      "response_type": "typing.Literal['policy', 'order']",
+      "record_id": "str | None",
+      "status": "str | None",
+      "order_value_inr": "int | None",
+      "escalation_score": "float | None",
+      "sources": "list[str]",
+      "fallback": "<class 'bool'>"
+    },
+    "crewai_binding": "Task.output_pydantic (Masai response_format)"
+  },
+  "policy_query_structured_response": {
+    "answer": "According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+    "response_type": "policy",
+    "record_id": null,
+    "status": null,
+    "order_value_inr": null,
+    "escalation_score": null,
+    "sources": [
+      "KB-001",
+      "KB-005",
+      "KB-010"
+    ],
+    "fallback": false
+  },
+  "order_query_structured_response": {
+    "answer": "Order NYK-20261013-0005 is Shipped (value 16336 INR, escalation_score=0.9067).",
+    "response_type": "order",
+    "record_id": "NYK-20261013-0005",
+    "status": "Shipped",
+    "order_value_inr": 16336,
+    "escalation_score": 0.9067,
+    "sources": [],
+    "fallback": false
+  },
+  "invalid_response_example": {
+    "error": "ValidationError",
+    "sample_payload": {
+      "answer": "x",
+      "response_type": "order",
+      "record_id": "INVALID",
+      "sources": [],
+      "fallback": false
+    },
+    "validation_message": "Value error, record_id must be a Task 1 ORDERS identifier"
+  }
+}

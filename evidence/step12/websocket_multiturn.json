@@ -1,0 +1,35 @@
+{
+  "transcript": [
+    {
+      "session_id": "nykaa-api-97909f70f54048ca800ff8b26b1d2ea4",
+      "type": "session_ready"
+    },
+    {
+      "answer": "{\"answer\":\"Order NYK-20261013-0005 is Shipped (value 16336 INR, escalation_score=0.9067).\",\"response_type\":\"order\",\"record_id\":\"NYK-20261013-0005\",\"status\":\"Shipped\",\"order_value_inr\":16336,\"escalation_score\":0.9067,\"sources\":[],\"fallback\":false}\n\nORDER_LOOKUP_JSON={\"days_since_created\": 23, \"delayed_shipment\": true, \"escalation_recommended\": true, \"escalation_score\": 0.9067, \"escalation_threshold\": 0.616, \"order_value_inr\": 16336, \"record_id\": \"NYK-20261013-0005\", \"status\": \"Shipped\"}",
+      "guardrail_blocked": false,
+      "guardrail_type": null,
+      "kickoff_used": true,
+      "session_id": "nykaa-api-97909f70f54048ca800ff8b26b1d2ea4",
+      "structured": {
+        "answer": "Order NYK-20261013-0005 is Shipped (value 16336 INR, escalation_score=0.9067).",
+        "escalation_score": 0.9067,
+        "fallback": false,
+        "order_value_inr": 16336,
+        "record_id": "NYK-20261013-0005",
+        "response_type": "order",
+        "sources": [],
+        "status": "Shipped"
+      },
+      "type": "chat_response"
+    },
+    {
+      "answer": "Based on the earlier lookup for NYK-20261013-0005 in this session (escalation_score=0.9067, threshold crossed), escalation is recommended.",
+      "guardrail_blocked": false,
+      "guardrail_type": null,
+      "kickoff_used": false,
+      "session_id": "nykaa-api-97909f70f54048ca800ff8b26b1d2ea4",
+      "structured": null,
+      "type": "chat_response"
+    }
+  ]
+}

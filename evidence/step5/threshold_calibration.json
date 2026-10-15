@@ -1,0 +1,66 @@
+{
+  "task4_collection_provisional": "nykaa_sentence_chunks",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chroma_score_field": "distances",
+  "chroma_distance_metric": "l2",
+  "chroma_distance_semantics": "squared_euclidean (Chroma default l2)",
+  "confidence_interpretation": "cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings)",
+  "calibration_measurements": [
+    {
+      "query": "Can I return an unused sealed Beauty product within seven days?",
+      "expected_scope": "IN_SCOPE",
+      "topic": "Beauty product returns",
+      "top1_chunk_id": "KB-001-sentence-002",
+      "top1_parent_document_id": "KB-001",
+      "top1_title": "Return Window by Product Category",
+      "raw_chroma_l2_distance": 0.2364,
+      "interpreted_confidence_cosine_similarity": 0.8818
+    },
+    {
+      "query": "How long does a Cash on Delivery refund take to reach my bank account?",
+      "expected_scope": "IN_SCOPE",
+      "topic": "COD refunds",
+      "top1_chunk_id": "KB-002-sentence-000",
+      "top1_parent_document_id": "KB-002",
+      "top1_title": "Cash on Delivery Refund Timelines",
+      "raw_chroma_l2_distance": 0.7852,
+      "interpreted_confidence_cosine_similarity": 0.6074
+    },
+    {
+      "query": "Can I cancel my order if it is still in Placed status within the first hour?",
+      "expected_scope": "IN_SCOPE",
+      "topic": "Order cancellation",
+      "top1_chunk_id": "KB-006-sentence-000",
+      "top1_parent_document_id": "KB-006",
+      "top1_title": "Order Cancellation Policy",
+      "raw_chroma_l2_distance": 0.488,
+      "interpreted_confidence_cosine_similarity": 0.756
+    },
+    {
+      "query": "What is the weather forecast in Mumbai tomorrow?",
+      "expected_scope": "OUT_OF_SCOPE",
+      "topic": "Weather (unrelated)",
+      "top1_chunk_id": "KB-003-sentence-002",
+      "top1_parent_document_id": "KB-003",
+      "top1_title": "Standard Delivery Service Levels",
+      "raw_chroma_l2_distance": 1.4406,
+      "interpreted_confidence_cosine_similarity": 0.2797
+    },
+    {
+      "query": "What are the roots of the quadratic equation x squared minus five x plus six?",
+      "expected_scope": "OUT_OF_SCOPE",
+      "topic": "Mathematics (unrelated)",
+      "top1_chunk_id": "KB-011-sentence-000",
+      "top1_parent_document_id": "KB-011",
+      "top1_title": "International Shipping Restrictions",
+      "raw_chroma_l2_distance": 1.7785,
+      "interpreted_confidence_cosine_similarity": 0.1108
+    }
+  ],
+  "observed_in_scope_top1_l2_max": 0.7852,
+  "observed_out_of_scope_top1_l2_min": 1.4406,
+  "selected_threshold": {
+    "max_top1_l2_distance": 1.1129,
+    "rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings)."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "actual_status": "Shipped",
+  "fabricated_status": "Delivered",
+  "verdict": {
+    "category": "order",
+    "grounded": false,
+    "reason": "status does not match Task 6 lookup"
+  }
+}

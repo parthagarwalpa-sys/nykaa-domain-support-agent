@@ -1,0 +1,86 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 18 items
+
+tests/test_guardrails.py::test_phone_masking_fires_on_deliberate_format PASSED [  5%]
+tests/test_guardrails.py::test_raw_phone_absent_from_sanitized_downstream_text PASSED [ 11%]
+tests/test_guardrails.py::test_card_last4_masking_in_payment_context PASSED [ 16%]
+tests/test_guardrails.py::test_unrelated_four_digit_values_not_masked PASSED [ 22%]
+tests/test_guardrails.py::test_injection_pattern_detected PASSED         [ 27%]
+tests/test_guardrails.py::test_injection_blocks_crew_execution PASSED    [ 33%]
+tests/test_guardrails.py::test_benign_query_not_blocked_by_injection PASSED [ 38%]
+tests/test_guardrails.py::test_unsupported_policy_answer_refused PASSED  [ 44%]
+tests/test_guardrails.py::test_fabricated_order_fields_refused PASSED    [ 50%]
+tests/test_guardrails.py::test_grounded_policy_response_passes PASSED    [ 55%]
+tests/test_guardrails.py::test_grounded_order_response_passes PASSED     [ 61%]
+tests/test_guardrails.py::test_guarded_policy_path_keeps_task9_schema_valid PASSED [ 66%]
+tests/test_guardrails.py::test_task8_memory_still_functional_with_guardrails PASSED [ 72%]
+tests/test_guardrails.py::test_task7_tools_still_execute_for_benign_guarded_request PASSED [ 77%]
+tests/test_guardrails.py::test_no_external_api_required_for_guardrails PASSED [ 83%]
+tests/test_guardrails.py::test_guardrail_execution_is_deterministic PASSED [ 88%]
+tests/test_guardrails.py::test_output_groundedness_refusal_via_guarded_wrapper PASSED [ 94%]
+tests/test_guardrails.py::test_fallback_policy_alignment PASSED          [100%]
+
+============================== warnings summary ===============================
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_guardrails.py: 56 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_guardrails.py::test_raw_phone_absent_from_sanitized_downstream_text
+tests/test_guardrails.py::test_benign_query_not_blocked_by_injection
+tests/test_guardrails.py::test_grounded_policy_response_passes
+tests/test_guardrails.py::test_grounded_order_response_passes
+tests/test_guardrails.py::test_guarded_policy_path_keeps_task9_schema_valid
+tests/test_guardrails.py::test_task8_memory_still_functional_with_guardrails
+tests/test_guardrails.py::test_task7_tools_still_execute_for_benign_guarded_request
+tests/test_guardrails.py::test_no_external_api_required_for_guardrails
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_guardrails.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_guardrails.py: 24 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+tests/test_guardrails.py::test_task8_memory_still_functional_with_guardrails
+tests/test_guardrails.py::test_task8_memory_still_functional_with_guardrails
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\support_session.py:93: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+    runnable = build_session_chat_runnable()
+
+tests/test_guardrails.py::test_task8_memory_still_functional_with_guardrails
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\memory.py:21: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+    _SESSION_STORE[session_id] = InMemoryChatMessageHistory()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 18 passed, 283 warnings in 18.12s ======================

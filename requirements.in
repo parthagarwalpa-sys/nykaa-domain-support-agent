@@ -1,0 +1,15 @@
+# Verified Step 1B stack (Python 3.13.12). Install: pip install -r requirements.in
+# Protobuf pins keep autogen-core and chromadb/OpenTelemetry metadata consistent (see evidence/step1b/PROTOBUF_RESOLUTION.md).
+crewai==1.15.27
+autogen-agentchat==0.7.5
+autogen-core==0.7.5
+langchain-core==1.6.10
+sentence-transformers==6.1.0
+chromadb==1.5.9
+fastapi==0.143.0
+uvicorn==0.54.0
+pydantic==2.12.5
+pytest==9.1.1
+httpx==0.28.1
+protobuf==5.29.6
+googleapis-common-protos==1.75.0

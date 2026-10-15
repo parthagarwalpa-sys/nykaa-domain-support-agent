@@ -1,0 +1,15 @@
+{
+  "card_last4_masks_applied": 0,
+  "duration_ms": 114.42,
+  "fallback": false,
+  "guardrail_reason": null,
+  "http_path": "/ws/chat",
+  "outcome": "success",
+  "phone_masks_applied": 0,
+  "request_text": "Check order NYK-20261013-0005.",
+  "response_type": "order",
+  "session_id": "nykaa-api-1a4abe05543e4d929bdd998026c4f64a",
+  "timestamp": "2026-10-15T11:12:37.691220+00:00",
+  "trace_id": "2e01d254-dd07-43bf-91de-3d8dc832d3d6",
+  "transport": "websocket"
+}

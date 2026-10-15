@@ -1,0 +1,6 @@
+{
+  "mask_events": [],
+  "raw_test_input": "Shipped in 2024; line total 1234 INR; PIN 560001.",
+  "sanitized_text": "Shipped in 2024; line total 1234 INR; PIN 560001.",
+  "unchanged": true
+}

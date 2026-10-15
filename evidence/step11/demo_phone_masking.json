@@ -1,0 +1,13 @@
+{
+  "downstream_sanitized_query": "What is the return eligibility for unused sealed Beauty products? Please SMS updates to ******3210 about returns.",
+  "mask_events": [
+    {
+      "kind": "phone",
+      "masked_fragment": "******3210",
+      "rule_id": "indian_mobile_10_digit"
+    }
+  ],
+  "raw_phone_in_sanitized_query": false,
+  "raw_test_input": "Please SMS updates to 9876543210 about returns.",
+  "sanitized_text": "Please SMS updates to ******3210 about returns."
+}

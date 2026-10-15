@@ -1,0 +1,96 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 18 items
+
+tests/test_request_logging.py::test_http_ask_creates_exactly_one_jsonl_entry PASSED [  5%]
+tests/test_request_logging.py::test_websocket_message_creates_one_jsonl_entry PASSED [ 11%]
+tests/test_request_logging.py::test_every_entry_is_valid_json PASSED     [ 16%]
+tests/test_request_logging.py::test_trace_id_exists PASSED               [ 22%]
+tests/test_request_logging.py::test_trace_ids_unique_across_requests PASSED [ 27%]
+tests/test_request_logging.py::test_timing_field_numeric_non_negative PASSED [ 33%]
+tests/test_request_logging.py::test_sanitized_request_text_logged PASSED [ 38%]
+tests/test_request_logging.py::test_raw_phone_absent_from_disk PASSED    [ 44%]
+tests/test_request_logging.py::test_masked_phone_present_in_log PASSED   [ 50%]
+tests/test_request_logging.py::test_raw_card_last4_absent_from_disk PASSED [ 55%]
+tests/test_request_logging.py::test_masked_card_present_in_log PASSED    [ 61%]
+tests/test_request_logging.py::test_unrelated_four_digit_values_remain_in_log PASSED [ 66%]
+tests/test_request_logging.py::test_injection_blocked_logged_safely PASSED [ 72%]
+tests/test_request_logging.py::test_groundedness_refusal_logged_safely PASSED [ 77%]
+tests/test_request_logging.py::test_successful_policy_request_logged PASSED [ 83%]
+tests/test_request_logging.py::test_successful_order_request_logged PASSED [ 88%]
+tests/test_request_logging.py::test_logging_does_not_bypass_guardrails PASSED [ 94%]
+tests/test_request_logging.py::test_no_external_api_key_required PASSED  [100%]
+
+============================== warnings summary ===============================
+app\main.py:43
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\main.py:43: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+.venv\Lib\site-packages\fastapi\applications.py:4745
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\fastapi\applications.py:4745: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)  # ty: ignore[deprecated]
+
+tests/test_request_logging.py: 18 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\support_session.py:121: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+    runnable = build_session_chat_runnable()
+
+tests/test_request_logging.py::test_http_ask_creates_exactly_one_jsonl_entry
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\memory.py:21: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+    _SESSION_STORE[session_id] = InMemoryChatMessageHistory()
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_request_logging.py: 112 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_request_logging.py: 16 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_request_logging.py: 96 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_request_logging.py: 48 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 18 passed, 581 warnings in 16.33s ======================

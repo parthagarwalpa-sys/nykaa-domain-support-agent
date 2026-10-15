@@ -1,0 +1,8 @@
+{
+  "fabricated_answer_preview": "All products can be returned after 365 days without proof of purchase.",
+  "verdict": {
+    "category": "policy",
+    "grounded": false,
+    "reason": "policy answer not derived from retrieved context"
+  }
+}

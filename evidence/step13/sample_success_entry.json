@@ -1,0 +1,15 @@
+{
+  "card_last4_masks_applied": 0,
+  "duration_ms": 4957.13,
+  "fallback": false,
+  "guardrail_reason": null,
+  "http_path": "/ask",
+  "outcome": "success",
+  "phone_masks_applied": 0,
+  "request_text": "What is the return eligibility for unused sealed Beauty products?",
+  "response_type": "policy",
+  "session_id": "evidence-policy",
+  "timestamp": "2026-10-15T11:12:37.262488+00:00",
+  "trace_id": "cd4d272f-a2a6-460e-a890-b4c6f11353b5",
+  "transport": "http_ask"
+}

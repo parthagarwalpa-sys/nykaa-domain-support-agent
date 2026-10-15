@@ -1,0 +1,103 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 15 items
+
+tests/test_grounded_cache_task16.py::test_cache_is_in_memory_dict PASSED [  6%]
+tests/test_grounded_cache_task16.py::test_normalization_rules PASSED     [ 13%]
+tests/test_grounded_cache_task16.py::test_cache_key_uses_normalized_query PASSED [ 20%]
+tests/test_grounded_cache_task16.py::test_first_query_is_miss_and_executes_generation PASSED [ 26%]
+tests/test_grounded_cache_task16.py::test_result_stored_after_miss PASSED [ 33%]
+tests/test_grounded_cache_task16.py::test_second_identical_query_is_hit PASSED [ 40%]
+tests/test_grounded_cache_task16.py::test_hit_returns_identical_grounded_result PASSED [ 46%]
+tests/test_grounded_cache_task16.py::test_equivalent_whitespace_case_query_hits_same_entry PASSED [ 53%]
+tests/test_grounded_cache_task16.py::test_unrelated_query_different_cache_entry PASSED [ 60%]
+tests/test_grounded_cache_task16.py::test_clear_cache_resets_counters_and_entries PASSED [ 66%]
+tests/test_grounded_cache_task16.py::test_fallback_results_can_be_cached PASSED [ 73%]
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache PASSED [ 80%]
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream PASSED [ 86%]
+tests/test_grounded_cache_task16.py::test_no_external_cache_service PASSED [ 93%]
+tests/test_grounded_cache_task16.py::test_behavior_is_deterministic PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_grounded_cache_task16.py: 14 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_grounded_cache_task16.py: 12 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_guardrails_still_functional_with_cache
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+tests/test_grounded_cache_task16.py::test_autogen_still_runs_downstream
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 15 passed, 70 warnings in 16.45s =======================

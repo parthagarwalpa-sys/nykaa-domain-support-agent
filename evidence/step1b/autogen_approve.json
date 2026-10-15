@@ -1,0 +1,12 @@
+{
+  "stop_reason": "Maximum number of turns 2 reached.",
+  "model_client_calls": 2,
+  "compliance_turns": 1,
+  "editor_turns": 1,
+  "verdict": {
+    "approved": true,
+    "final_answer": "Beauty orders may be returned within 15 days if unused.",
+    "reason": "Draft aligns with supplied retrieved context."
+  },
+  "verdict_model": "approved=True final_answer='Beauty orders may be returned within 15 days if unused.' reason='Draft aligns with supplied retrieved context.'"
+}

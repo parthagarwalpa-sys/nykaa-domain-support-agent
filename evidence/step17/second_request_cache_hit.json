@@ -1,0 +1,17 @@
+{
+  "answer_preview": "According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is ",
+  "cache_hit": true,
+  "grounded_generation_execution_count_unchanged": true,
+  "stats_after": {
+    "cache_hits": 1,
+    "cache_misses": 1,
+    "entries": 1,
+    "grounded_generation_execution_count": 1
+  },
+  "stats_before": {
+    "cache_hits": 0,
+    "cache_misses": 1,
+    "entries": 1,
+    "grounded_generation_execution_count": 1
+  }
+}

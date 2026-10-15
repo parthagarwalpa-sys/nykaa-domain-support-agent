@@ -1,0 +1,41 @@
+# Local Python environment and caches
+.venv/
+.venv-audit-fresh/
+.venv-disposable-protobuf*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local runtime data / generated indexes (rebuild from scripts)
+chroma_data/
+chromadb_data/
+.vector_cache/
+model_cache/
+logs/
+*.log
+
+# IDE/OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local packaged output
+*.zip
+
+# Generated local Chroma collection
+
+# Generated local Chroma collection
+nykaa_fixed_chunks/

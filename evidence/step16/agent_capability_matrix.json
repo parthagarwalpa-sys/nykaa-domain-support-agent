@@ -1,0 +1,18 @@
+[
+  {
+    "agent_role": "Retrieval Agent",
+    "tool_names": [
+      "rag_policy_lookup"
+    ]
+  },
+  {
+    "agent_role": "Order Lookup Agent",
+    "tool_names": [
+      "lookup_order_status"
+    ]
+  },
+  {
+    "agent_role": "Response Composer Agent",
+    "tool_names": []
+  }
+]

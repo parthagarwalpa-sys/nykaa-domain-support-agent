@@ -1,0 +1,10 @@
+{
+  "draft_answer": "Electronics have a lifetime warranty on all electronics with unlimited free replacements.",
+  "order_payload": null,
+  "policy_context": "Electronics in this demo catalog include a 12-month limited warranty covering manufacturing defects under normal use; warranty claims require proof of purchase.",
+  "response_type": "policy",
+  "source_document_ids": [
+    "KB-005"
+  ],
+  "user_query": "What warranty applies to Electronics?"
+}

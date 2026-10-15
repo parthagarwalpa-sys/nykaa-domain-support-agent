@@ -1,0 +1,17 @@
+{
+  "draft_answer": "Order NYK-20261013-0005 is Shipped (value 16336 INR, escalation_score=0.9067).",
+  "order_payload": {
+    "days_since_created": 23,
+    "delayed_shipment": true,
+    "escalation_recommended": true,
+    "escalation_score": 0.9067,
+    "escalation_threshold": 0.616,
+    "order_value_inr": 16336,
+    "record_id": "NYK-20261013-0005",
+    "status": "Shipped"
+  },
+  "policy_context": null,
+  "response_type": "order",
+  "source_document_ids": [],
+  "user_query": "Check the status of order NYK-20261013-0005."
+}

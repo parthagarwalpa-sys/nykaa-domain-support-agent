@@ -1,0 +1,15 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 5 items
+
+tests/test_knowledge_base_drafts.py::test_exactly_twelve_required_files_exist PASSED [ 20%]
+tests/test_knowledge_base_drafts.py::test_all_topics_represented_once PASSED [ 40%]
+tests/test_knowledge_base_drafts.py::test_document_ids_unique_and_match_filenames PASSED [ 60%]
+tests/test_knowledge_base_drafts.py::test_metadata_and_policy_body_present PASSED [ 80%]
+tests/test_knowledge_base_drafts.py::test_policy_body_sentence_counts PASSED [100%]
+
+============================== 5 passed in 0.02s ==============================

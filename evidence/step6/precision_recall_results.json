@@ -1,0 +1,482 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 3,
+  "ground_truth_path": "C:\\Users\\Parth\\Projects\\MASAI_NYKAA_CAPSTONE\\app\\data\\retrieval_ground_truth.json",
+  "per_query_results": [
+    {
+      "query_id": "eval_01_beauty_return",
+      "query_text": "What is the return eligibility for unused sealed Beauty products?",
+      "topic": "Beauty return eligibility",
+      "collection": "nykaa_fixed_chunks",
+      "strategy": "fixed",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-001"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-001-fixed-001",
+          "document_id": "KB-001",
+          "raw_chroma_l2_squared": 0.5659302473068237
+        },
+        {
+          "chunk_id": "KB-005-fixed-001",
+          "document_id": "KB-005",
+          "raw_chroma_l2_squared": 0.8536145091056824
+        },
+        {
+          "chunk_id": "KB-010-fixed-002",
+          "document_id": "KB-010",
+          "raw_chroma_l2_squared": 0.8719927668571472
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-001",
+        "KB-005",
+        "KB-010"
+      ],
+      "true_positives": 1,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-001"
+      ],
+      "false_positive_ids": [
+        "KB-005",
+        "KB-010"
+      ],
+      "false_negative_ids": [],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 2) = 1/3 = 0.3333",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_01_beauty_return",
+      "query_text": "What is the return eligibility for unused sealed Beauty products?",
+      "topic": "Beauty return eligibility",
+      "collection": "nykaa_sentence_chunks",
+      "strategy": "sentence",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-001"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-001-sentence-002",
+          "document_id": "KB-001",
+          "raw_chroma_l2_squared": 0.4850671887397766
+        },
+        {
+          "chunk_id": "KB-005-sentence-001",
+          "document_id": "KB-005",
+          "raw_chroma_l2_squared": 0.8433942198753357
+        },
+        {
+          "chunk_id": "KB-010-sentence-003",
+          "document_id": "KB-010",
+          "raw_chroma_l2_squared": 0.9031016230583191
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-001",
+        "KB-005",
+        "KB-010"
+      ],
+      "true_positives": 1,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-001"
+      ],
+      "false_positive_ids": [
+        "KB-005",
+        "KB-010"
+      ],
+      "false_negative_ids": [],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 2) = 1/3 = 0.3333",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_02_cod_refund",
+      "query_text": "What is the timeline for COD refunds to a bank account?",
+      "topic": "COD refund timeline",
+      "collection": "nykaa_fixed_chunks",
+      "strategy": "fixed",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-002"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-002-fixed-000",
+          "document_id": "KB-002",
+          "raw_chroma_l2_squared": 0.6896718740463257
+        },
+        {
+          "chunk_id": "KB-002-fixed-001",
+          "document_id": "KB-002",
+          "raw_chroma_l2_squared": 0.9051969051361084
+        },
+        {
+          "chunk_id": "KB-006-fixed-002",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 1.1526284217834473
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-002",
+        "KB-006"
+      ],
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-002"
+      ],
+      "false_positive_ids": [
+        "KB-006"
+      ],
+      "false_negative_ids": [],
+      "precision": 0.5,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 1) = 1/2 = 0.5000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_02_cod_refund",
+      "query_text": "What is the timeline for COD refunds to a bank account?",
+      "topic": "COD refund timeline",
+      "collection": "nykaa_sentence_chunks",
+      "strategy": "sentence",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-002"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-002-sentence-001",
+          "document_id": "KB-002",
+          "raw_chroma_l2_squared": 0.3884607255458832
+        },
+        {
+          "chunk_id": "KB-002-sentence-002",
+          "document_id": "KB-002",
+          "raw_chroma_l2_squared": 0.9932505488395691
+        },
+        {
+          "chunk_id": "KB-006-sentence-003",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.9992131590843201
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-002",
+        "KB-006"
+      ],
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-002"
+      ],
+      "false_positive_ids": [
+        "KB-006"
+      ],
+      "false_negative_ids": [],
+      "precision": 0.5,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 1) = 1/2 = 0.5000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_03_delivery_sla",
+      "query_text": "What is the express delivery SLA for metro tier-1 cities?",
+      "topic": "Express delivery SLA",
+      "collection": "nykaa_fixed_chunks",
+      "strategy": "fixed",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-003"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-003-fixed-001",
+          "document_id": "KB-003",
+          "raw_chroma_l2_squared": 0.8277977705001831
+        },
+        {
+          "chunk_id": "KB-003-fixed-000",
+          "document_id": "KB-003",
+          "raw_chroma_l2_squared": 0.9783690571784973
+        },
+        {
+          "chunk_id": "KB-011-fixed-000",
+          "document_id": "KB-011",
+          "raw_chroma_l2_squared": 1.1745169162750244
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-003",
+        "KB-011"
+      ],
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-003"
+      ],
+      "false_positive_ids": [
+        "KB-011"
+      ],
+      "false_negative_ids": [],
+      "precision": 0.5,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 1) = 1/2 = 0.5000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_03_delivery_sla",
+      "query_text": "What is the express delivery SLA for metro tier-1 cities?",
+      "topic": "Express delivery SLA",
+      "collection": "nykaa_sentence_chunks",
+      "strategy": "sentence",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-003"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-003-sentence-001",
+          "document_id": "KB-003",
+          "raw_chroma_l2_squared": 0.7059046626091003
+        },
+        {
+          "chunk_id": "KB-011-sentence-000",
+          "document_id": "KB-011",
+          "raw_chroma_l2_squared": 1.2518651485443115
+        },
+        {
+          "chunk_id": "KB-003-sentence-002",
+          "document_id": "KB-003",
+          "raw_chroma_l2_squared": 1.2614412307739258
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-003",
+        "KB-011"
+      ],
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-003"
+      ],
+      "false_positive_ids": [
+        "KB-011"
+      ],
+      "false_negative_ids": [],
+      "precision": 0.5,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 1) = 1/2 = 0.5000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_04_cancellation_placed",
+      "query_text": "What is the cancellation policy for orders still in Placed status?",
+      "topic": "Order cancellation while Placed",
+      "collection": "nykaa_fixed_chunks",
+      "strategy": "fixed",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-006"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-006-fixed-000",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.5656222701072693
+        },
+        {
+          "chunk_id": "KB-006-fixed-001",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.7792203426361084
+        },
+        {
+          "chunk_id": "KB-006-fixed-002",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.7985236644744873
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-006"
+      ],
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-006"
+      ],
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 0) = 1/1 = 1.0000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_04_cancellation_placed",
+      "query_text": "What is the cancellation policy for orders still in Placed status?",
+      "topic": "Order cancellation while Placed",
+      "collection": "nykaa_sentence_chunks",
+      "strategy": "sentence",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-006"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-006-sentence-002",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.5824787020683289
+        },
+        {
+          "chunk_id": "KB-006-sentence-000",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.609112024307251
+        },
+        {
+          "chunk_id": "KB-006-sentence-001",
+          "document_id": "KB-006",
+          "raw_chroma_l2_squared": 0.64372718334198
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-006"
+      ],
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-006"
+      ],
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 0) = 1/1 = 1.0000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_05_size_exchange",
+      "query_text": "How does size exchange work for Apparel and Footwear?",
+      "topic": "Apparel/Footwear size exchange",
+      "collection": "nykaa_fixed_chunks",
+      "strategy": "fixed",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-009"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-009-fixed-000",
+          "document_id": "KB-009",
+          "raw_chroma_l2_squared": 0.5858978629112244
+        },
+        {
+          "chunk_id": "KB-009-fixed-001",
+          "document_id": "KB-009",
+          "raw_chroma_l2_squared": 1.0554636716842651
+        },
+        {
+          "chunk_id": "KB-009-fixed-002",
+          "document_id": "KB-009",
+          "raw_chroma_l2_squared": 1.216552495956421
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-009"
+      ],
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-009"
+      ],
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 0) = 1/1 = 1.0000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    },
+    {
+      "query_id": "eval_05_size_exchange",
+      "query_text": "How does size exchange work for Apparel and Footwear?",
+      "topic": "Apparel/Footwear size exchange",
+      "collection": "nykaa_sentence_chunks",
+      "strategy": "sentence",
+      "top_k": 3,
+      "relevant_document_ids": [
+        "KB-009"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "KB-009-sentence-000",
+          "document_id": "KB-009",
+          "raw_chroma_l2_squared": 0.5841301679611206
+        },
+        {
+          "chunk_id": "KB-009-sentence-002",
+          "document_id": "KB-009",
+          "raw_chroma_l2_squared": 0.985249400138855
+        },
+        {
+          "chunk_id": "KB-009-sentence-001",
+          "document_id": "KB-009",
+          "raw_chroma_l2_squared": 1.0586984157562256
+        }
+      ],
+      "retrieved_parent_document_ids": [
+        "KB-009"
+      ],
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positive_ids": [
+        "KB-009"
+      ],
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "precision": 1.0,
+      "recall": 1.0,
+      "precision_expression": "precision = TP / (TP + FP) = 1 / (1 + 0) = 1/1 = 1.0000",
+      "recall_expression": "recall = TP / (TP + FN) = 1 / (1 + 0) = 1/1 = 1.0000"
+    }
+  ],
+  "aggregates": {
+    "fixed": {
+      "strategy": "fixed",
+      "collection": "nykaa_fixed_chunks",
+      "query_count": 5,
+      "mean_precision": 0.6667,
+      "mean_recall": 1.0,
+      "mean_f1": 0.7667
+    },
+    "sentence": {
+      "strategy": "sentence",
+      "collection": "nykaa_sentence_chunks",
+      "query_count": 5,
+      "mean_precision": 0.6667,
+      "mean_recall": 1.0,
+      "mean_f1": 0.7667
+    }
+  },
+  "recommendation": {
+    "recommended_strategy": "fixed",
+    "recommended_collection": "nykaa_fixed_chunks",
+    "rationale_sentences": "Mean precision and recall both tied at 0.6667 / 1.0000; fixed-size indexing is preferred for fewer chunks (39 vs 49) and simpler overlap handling."
+  }
+}

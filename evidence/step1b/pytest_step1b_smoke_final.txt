@@ -1,0 +1,61 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 6 items
+
+tests/test_step1b_smoke.py::test_mock_crew_llm_instantiates_without_api_keys PASSED [ 16%]
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool PASSED [ 33%]
+tests/test_step1b_smoke.py::test_autogen_two_agent_review_approves_supported_draft PASSED [ 50%]
+tests/test_step1b_smoke.py::test_autogen_two_agent_review_revises_unsupported_draft PASSED [ 66%]
+tests/test_step1b_smoke.py::test_offline_modules_do_not_require_api_credentials PASSED [ 83%]
+tests/test_step1b_smoke.py::test_import_smoke_for_mandatory_packages PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 6 passed, 13 warnings in 11.04s =======================

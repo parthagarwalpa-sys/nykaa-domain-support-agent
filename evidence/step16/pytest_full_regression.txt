@@ -1,0 +1,171 @@
+﻿........................................................................ [ 37%]
+........................................................................ [ 74%]
+.................................................                        [100%]
+============================== warnings summary ===============================
+app\main.py:43
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\main.py:43: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+.venv\Lib\site-packages\fastapi\applications.py:4745
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\fastapi\applications.py:4745: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)  # ty: ignore[deprecated]
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 21 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 21 warnings
+tests/test_support_crew.py: 27 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 21 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 21 warnings
+tests/test_support_crew.py: 27 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 21 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 21 warnings
+tests/test_support_crew.py: 27 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_autogen_review_task14.py: 35 warnings
+tests/test_evaluation_task13.py: 112 warnings
+tests/test_fastapi_api.py: 77 warnings
+tests/test_governance_task15.py: 25 warnings
+tests/test_guardrails.py: 56 warnings
+tests/test_request_logging.py: 112 warnings
+tests/test_session_memory.py: 49 warnings
+tests/test_step1b_smoke.py: 3 warnings
+tests/test_structured_crew_output.py: 43 warnings
+tests/test_support_crew.py: 45 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_autogen_review_task14.py: 5 warnings
+tests/test_evaluation_task13.py: 16 warnings
+tests/test_fastapi_api.py: 11 warnings
+tests/test_governance_task15.py: 3 warnings
+tests/test_guardrails.py: 8 warnings
+tests/test_request_logging.py: 16 warnings
+tests/test_session_memory.py: 7 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 6 warnings
+tests/test_support_crew.py: 6 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 9 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 18 warnings
+tests/test_support_crew.py: 18 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 9 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 18 warnings
+tests/test_support_crew.py: 18 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_autogen_review_task14.py: 30 warnings
+tests/test_evaluation_task13.py: 96 warnings
+tests/test_fastapi_api.py: 66 warnings
+tests/test_governance_task15.py: 18 warnings
+tests/test_guardrails.py: 48 warnings
+tests/test_request_logging.py: 96 warnings
+tests/test_session_memory.py: 42 warnings
+tests/test_step1b_smoke.py: 2 warnings
+tests/test_structured_crew_output.py: 36 warnings
+tests/test_support_crew.py: 36 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 9 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 18 warnings
+tests/test_support_crew.py: 18 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_autogen_review_task14.py: 15 warnings
+tests/test_evaluation_task13.py: 48 warnings
+tests/test_fastapi_api.py: 33 warnings
+tests/test_governance_task15.py: 9 warnings
+tests/test_guardrails.py: 24 warnings
+tests/test_request_logging.py: 48 warnings
+tests/test_session_memory.py: 21 warnings
+tests/test_step1b_smoke.py: 1 warning
+tests/test_structured_crew_output.py: 18 warnings
+tests/test_support_crew.py: 18 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+tests/test_fastapi_api.py: 13 warnings
+tests/test_governance_task15.py: 1 warning
+tests/test_guardrails.py: 2 warnings
+tests/test_request_logging.py: 18 warnings
+tests/test_session_memory.py: 11 warnings
+tests/test_structured_crew_output.py: 2 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\support_session.py:126: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+    runnable = build_session_chat_runnable()
+
+tests/test_fastapi_api.py::test_ask_policy_query
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\app\memory.py:21: LangChainDeprecationWarning: The class `InMemoryChatMessageHistory` was deprecated in LangChain 1.6.4 and will be removed in 2.0.0 See the short-term memory documentation for recommended alternatives: https://docs.langchain.com/oss/python/langchain/short-term-memory
+    _SESSION_STORE[session_id] = InMemoryChatMessageHistory()
+
+tests/test_session_memory.py::test_runnable_with_message_history_wrapper_is_used
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\tests\test_session_memory.py:43: LangChainDeprecationWarning: RunnableWithMessageHistory is deprecated. Use LangGraph's built-in persistence instead.
+    runnable = build_session_chat_runnable()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+193 passed, 2874 warnings in 31.29s

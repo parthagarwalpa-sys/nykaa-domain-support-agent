@@ -1,0 +1,5 @@
+{
+  "attempted_role": "Retrieval Agent",
+  "capability": "lookup_order_status",
+  "result": "UnauthorizedAgentCapabilityError"
+}

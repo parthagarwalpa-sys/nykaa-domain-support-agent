@@ -1,0 +1,12 @@
+{
+  "response": {
+    "days_since_created": 23,
+    "delayed_shipment": true,
+    "escalation_recommended": true,
+    "escalation_score": 0.9067,
+    "escalation_threshold": 0.616,
+    "order_value_inr": 16336,
+    "record_id": "NYK-20261013-0005",
+    "status": "Shipped"
+  }
+}

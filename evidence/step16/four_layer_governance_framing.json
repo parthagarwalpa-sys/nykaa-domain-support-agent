@@ -1,0 +1,6 @@
+{
+  "application_layer": "Least autonomy: only Order Lookup Agent is wired to lookup_order_status / Task 6.",
+  "data_layer": "Task 10 PII masking before processing/logging; synthetic capstone dataset and KB only.",
+  "evaluation_layer": "Task 13 mock-judge evaluation and Task 4 retrieval fallback for groundedness.",
+  "runtime_layer": "Per-request budget cap (1024 estimated_tokens) rejects oversized input before crew/tools."
+}

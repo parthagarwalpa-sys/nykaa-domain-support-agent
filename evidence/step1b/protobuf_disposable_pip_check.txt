@@ -1,0 +1,55 @@
+pip check (disposable .venv-disposable-protobuf):
+No broken requirements found.
+
+Name: protobuf
+Version: 5.29.6
+Summary: 
+Home-page: https://developers.google.com/protocol-buffers/
+Author: protobuf@googlegroups.com
+Author-email: protobuf@googlegroups.com
+License: 3-Clause BSD License
+Location: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv-disposable-protobuf\Lib\site-packages
+Requires: 
+Required-by: autogen-core, googleapis-common-protos, onnxruntime, opentelemetry-proto
+---
+Name: googleapis-common-protos
+Version: 1.75.0
+Summary: Common protobufs used in Google APIs
+Home-page: 
+Author: 
+Author-email: Google LLC <googleapis-packages@google.com>
+License: Apache 2.0
+Location: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv-disposable-protobuf\Lib\site-packages
+Requires: protobuf
+Required-by: opentelemetry-exporter-otlp-proto-grpc, opentelemetry-exporter-otlp-proto-http
+---
+Name: autogen-core
+Version: 0.7.5
+Summary: Foundational interfaces and agent runtime implementation for AutoGen
+Home-page: 
+Author: 
+Author-email: 
+License: MIT License
+
+    Copyright (c) Microsoft Corporation.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE
+Location: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv-disposable-protobuf\Lib\site-packages
+Requires: jsonref, opentelemetry-api, pillow, protobuf, pydantic, typing-extensions
+Required-by: autogen-agentchat

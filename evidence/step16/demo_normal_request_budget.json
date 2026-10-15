@@ -1,0 +1,11 @@
+{
+  "budget_assessment": {
+    "budget_cap_tokens": 1024,
+    "estimated_tokens": 17,
+    "sanitized_text_length": 65,
+    "within_budget": true
+  },
+  "kickoff_used": true,
+  "query_preview": "What is the return eligibility for unused sealed Beauty products?",
+  "rag_tool_call_count": 1
+}

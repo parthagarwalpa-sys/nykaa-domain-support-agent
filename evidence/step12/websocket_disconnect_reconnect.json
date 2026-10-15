@@ -1,0 +1,72 @@
+{
+  "steps": [
+    {
+      "payload": {
+        "session_id": "nykaa-api-688ca1696ba04e40b2e46b32a88cb6c1",
+        "type": "session_ready"
+      },
+      "step": "client_a_connected"
+    },
+    {
+      "payload": {
+        "answer": "{\"answer\":\"According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\",\"response_type\":\"policy\",\"record_id\":null,\"status\":null,\"order_value_inr\":null,\"escalation_score\":null,\"sources\":[\"KB-001\",\"KB-005\",\"KB-010\"],\"fallback\":false}",
+        "guardrail_blocked": false,
+        "guardrail_type": null,
+        "kickoff_used": true,
+        "session_id": "nykaa-api-688ca1696ba04e40b2e46b32a88cb6c1",
+        "structured": {
+          "answer": "According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+          "escalation_score": null,
+          "fallback": false,
+          "order_value_inr": null,
+          "record_id": null,
+          "response_type": "policy",
+          "sources": [
+            "KB-001",
+            "KB-005",
+            "KB-010"
+          ],
+          "status": null
+        },
+        "type": "chat_response"
+      },
+      "step": "client_a_response"
+    },
+    {
+      "note": "context manager exit",
+      "step": "client_a_disconnected"
+    },
+    {
+      "payload": {
+        "session_id": "nykaa-api-35d370dfbb1b4fa5b9f2c466a24501bd",
+        "type": "session_ready"
+      },
+      "step": "client_b_connected"
+    },
+    {
+      "payload": {
+        "answer": "{\"answer\":\"According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\",\"response_type\":\"policy\",\"record_id\":null,\"status\":null,\"order_value_inr\":null,\"escalation_score\":null,\"sources\":[\"KB-001\",\"KB-005\",\"KB-010\"],\"fallback\":false}",
+        "guardrail_blocked": false,
+        "guardrail_type": null,
+        "kickoff_used": true,
+        "session_id": "nykaa-api-35d370dfbb1b4fa5b9f2c466a24501bd",
+        "structured": {
+          "answer": "According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+          "escalation_score": null,
+          "fallback": false,
+          "order_value_inr": null,
+          "record_id": null,
+          "response_type": "policy",
+          "sources": [
+            "KB-001",
+            "KB-005",
+            "KB-010"
+          ],
+          "status": null
+        },
+        "type": "chat_response"
+      },
+      "step": "client_b_response"
+    }
+  ]
+}

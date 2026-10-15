@@ -1,0 +1,21 @@
+{
+  "agents": [
+    {
+      "description": "Policy Compliance Reviewer",
+      "name": "policy_compliance_reviewer"
+    },
+    {
+      "description": "Final Editor",
+      "name": "final_editor"
+    },
+    {
+      "output_content_type": "ReviewVerdict"
+    }
+  ],
+  "custom_message_types": [
+    "StructuredMessage[ReviewVerdict]"
+  ],
+  "max_turns": 2,
+  "model_client": "DeterministicMockChatCompletionClient",
+  "team_type": "RoundRobinGroupChat"
+}

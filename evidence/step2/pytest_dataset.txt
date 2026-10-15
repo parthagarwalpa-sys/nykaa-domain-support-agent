@@ -1,0 +1,19 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 9 items
+
+tests/test_dataset.py::test_orders_count_and_fields PASSED               [ 11%]
+tests/test_dataset.py::test_record_ids_unique PASSED                     [ 22%]
+tests/test_dataset.py::test_categories_valid_and_minimum_coverage PASSED [ 33%]
+tests/test_dataset.py::test_statuses_valid_and_minimum_coverage PASSED   [ 44%]
+tests/test_dataset.py::test_order_values_in_documented_range PASSED      [ 55%]
+tests/test_dataset.py::test_days_since_created_range PASSED              [ 66%]
+tests/test_dataset.py::test_delayed_shipment_boolean_and_percentage_band PASSED [ 77%]
+tests/test_dataset.py::test_deterministic_regeneration PASSED            [ 88%]
+tests/test_dataset.py::test_delayed_probability_documented PASSED        [100%]
+
+============================== 9 passed in 0.04s ==============================

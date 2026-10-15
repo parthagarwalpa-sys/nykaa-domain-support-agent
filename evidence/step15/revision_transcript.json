@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "content": "Review the CrewAI composer draft against supplied source context.\nOriginal user query: What warranty applies to Electronics?\nResponse type: policy\nSource document IDs: KB-005\nRetrieved policy context: Electronics in this demo catalog include a 12-month limited warranty covering manufacturing defects under normal use; warranty claims require proof of purchase.\nVerified order lookup: N/A\nDraft answer: Electronics have a lifetime warranty on all electronics with unlimited free replacements.\n",
+      "source": "user",
+      "type": "TextMessage"
+    },
+    {
+      "content": "Policy review: the draft includes statements not supported by the retrieved context. Recommend revision before release.",
+      "source": "policy_compliance_reviewer",
+      "type": "TextMessage"
+    },
+    {
+      "content": {
+        "approved": false,
+        "final_answer": "Based on the provided source context only: Electronics in this demo catalog include a 12-month limited warranty covering manufacturing defects under normal use; warranty claims require proof of purchase.",
+        "reason": "Removed or corrected claims not supported by retrieved context."
+      },
+      "source": "final_editor",
+      "type": "StructuredMessage[ReviewVerdict]"
+    }
+  ],
+  "stop_reason": "Maximum number of turns 2 reached."
+}

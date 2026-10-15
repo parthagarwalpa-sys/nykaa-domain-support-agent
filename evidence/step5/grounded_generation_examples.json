@@ -1,0 +1,266 @@
+[
+  {
+    "query": "What is the return eligibility for unused sealed Beauty products?",
+    "collection": "nykaa_sentence_chunks",
+    "top_k": 3,
+    "threshold_max_l2_distance": 1.1129,
+    "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+    "fallback_fired": false,
+    "top1_l2_distance": 0.4850671887397766,
+    "top1_confidence": 0.7574664056301117,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "KB-001-sentence-002",
+        "document_id": "KB-001",
+        "title": "Return Window by Product Category",
+        "topic": "return window by product category",
+        "source_file": "KB-001-return-window.md",
+        "text": "Beauty products may be returned within 7 days only when the seal is intact and the item is unused.",
+        "l2_distance": 0.4850671887397766,
+        "confidence": 0.7574664056301117
+      },
+      {
+        "chunk_id": "KB-005-sentence-001",
+        "document_id": "KB-005",
+        "title": "Warranty Terms by Category",
+        "topic": "warranty terms by category",
+        "source_file": "KB-005-warranty-terms.md",
+        "text": "Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery.",
+        "l2_distance": 0.8433942198753357,
+        "confidence": 0.5783028900623322
+      },
+      {
+        "chunk_id": "KB-010-sentence-003",
+        "document_id": "KB-010",
+        "title": "Damaged Item Claim Process",
+        "topic": "damaged-item claim process",
+        "source_file": "KB-010-damaged-item-claim.md",
+        "text": "Liquid or sealed Beauty items with broken seals are not eligible unless damage occurred during transit documented at delivery.",
+        "l2_distance": 0.9031016230583191,
+        "confidence": 0.5484491884708405
+      }
+    ],
+    "supporting_context": "Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Liquid or sealed Beauty items with broken seals are not eligible unless damage occurred during transit documented at delivery.",
+    "answer": "According to Return Window by Product Category (KB-001): Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Liquid or sealed Beauty items with broken seals are not eligible unless damage occurred during transit documented at delivery."
+  },
+  {
+    "query": "What is the timeline for COD refunds to a bank account?",
+    "collection": "nykaa_sentence_chunks",
+    "top_k": 3,
+    "threshold_max_l2_distance": 1.1129,
+    "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+    "fallback_fired": false,
+    "top1_l2_distance": 0.3884607255458832,
+    "top1_confidence": 0.8057696372270584,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "KB-002-sentence-001",
+        "document_id": "KB-002",
+        "title": "Cash on Delivery Refund Timelines",
+        "topic": "COD refund timelines",
+        "source_file": "KB-002-cod-refund-timelines.md",
+        "text": "Approved COD refunds are transferred to the bank account shared during the return request within 7 business days.",
+        "l2_distance": 0.3884607255458832,
+        "confidence": 0.8057696372270584
+      },
+      {
+        "chunk_id": "KB-002-sentence-002",
+        "document_id": "KB-002",
+        "title": "Cash on Delivery Refund Timelines",
+        "topic": "COD refund timelines",
+        "source_file": "KB-002-cod-refund-timelines.md",
+        "text": "If bank details are missing or invalid, the refund remains on hold until corrected details are verified by support.",
+        "l2_distance": 0.9932505488395691,
+        "confidence": 0.5033747255802155
+      },
+      {
+        "chunk_id": "KB-006-sentence-003",
+        "document_id": "KB-006",
+        "title": "Order Cancellation Policy",
+        "topic": "order-cancellation policy",
+        "source_file": "KB-006-order-cancellation.md",
+        "text": "Refunds for cancelled prepaid orders are returned to the original payment method within 5 business days.",
+        "l2_distance": 0.9992131590843201,
+        "confidence": 0.50039342045784
+      }
+    ],
+    "supporting_context": "Approved COD refunds are transferred to the bank account shared during the return request within 7 business days. If bank details are missing or invalid, the refund remains on hold until corrected details are verified by support. Refunds for cancelled prepaid orders are returned to the original payment method within 5 business days.",
+    "answer": "According to Cash on Delivery Refund Timelines (KB-002): Approved COD refunds are transferred to the bank account shared during the return request within 7 business days. If bank details are missing or invalid, the refund remains on hold until corrected details are verified by support. Refunds for cancelled prepaid orders are returned to the original payment method within 5 business days."
+  },
+  {
+    "query": "What is the express delivery SLA for metro tier-1 cities?",
+    "collection": "nykaa_sentence_chunks",
+    "top_k": 3,
+    "threshold_max_l2_distance": 1.1129,
+    "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+    "fallback_fired": false,
+    "top1_l2_distance": 0.7059046626091003,
+    "top1_confidence": 0.6470476686954498,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "KB-003-sentence-001",
+        "document_id": "KB-003",
+        "title": "Standard Delivery Service Levels",
+        "topic": "delivery SLAs",
+        "source_file": "KB-003-delivery-slas.md",
+        "text": "Metro and tier-1 cities may receive express-eligible shipments within 2 to 3 business days when express shipping is selected at checkout.",
+        "l2_distance": 0.7059046626091003,
+        "confidence": 0.6470476686954498
+      },
+      {
+        "chunk_id": "KB-011-sentence-000",
+        "document_id": "KB-011",
+        "title": "International Shipping Restrictions",
+        "topic": "international shipping restrictions",
+        "source_file": "KB-011-international-shipping.md",
+        "text": "This fictional demo storefront ships only to valid delivery addresses within India.",
+        "l2_distance": 1.2518651485443115,
+        "confidence": 0.37406742572784424
+      },
+      {
+        "chunk_id": "KB-003-sentence-002",
+        "document_id": "KB-003",
+        "title": "Standard Delivery Service Levels",
+        "topic": "delivery SLAs",
+        "source_file": "KB-003-delivery-slas.md",
+        "text": "Delivery timelines exclude national holidays and severe weather delays declared by the courier partner.",
+        "l2_distance": 1.2614412307739258,
+        "confidence": 0.3692793846130371
+      }
+    ],
+    "supporting_context": "Metro and tier-1 cities may receive express-eligible shipments within 2 to 3 business days when express shipping is selected at checkout. This fictional demo storefront ships only to valid delivery addresses within India. Delivery timelines exclude national holidays and severe weather delays declared by the courier partner.",
+    "answer": "According to Standard Delivery Service Levels (KB-003): Metro and tier-1 cities may receive express-eligible shipments within 2 to 3 business days when express shipping is selected at checkout. This fictional demo storefront ships only to valid delivery addresses within India. Delivery timelines exclude national holidays and severe weather delays declared by the courier partner."
+  },
+  {
+    "query": "What is the cancellation policy for orders still in Placed status?",
+    "collection": "nykaa_sentence_chunks",
+    "top_k": 3,
+    "threshold_max_l2_distance": 1.1129,
+    "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+    "fallback_fired": false,
+    "top1_l2_distance": 0.5824787020683289,
+    "top1_confidence": 0.7087606489658356,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "KB-006-sentence-002",
+        "document_id": "KB-006",
+        "title": "Order Cancellation Policy",
+        "topic": "order-cancellation policy",
+        "source_file": "KB-006-order-cancellation.md",
+        "text": "Partial cancellation of multi-item orders is allowed only while the order remains in Placed status.",
+        "l2_distance": 0.5824787020683289,
+        "confidence": 0.7087606489658356
+      },
+      {
+        "chunk_id": "KB-006-sentence-000",
+        "document_id": "KB-006",
+        "title": "Order Cancellation Policy",
+        "topic": "order-cancellation policy",
+        "source_file": "KB-006-order-cancellation.md",
+        "text": "Orders in Placed status may be cancelled without charge within 60 minutes of order confirmation or before warehouse packing begins, whichever occurs first.",
+        "l2_distance": 0.609112024307251,
+        "confidence": 0.6954439878463745
+      },
+      {
+        "chunk_id": "KB-006-sentence-001",
+        "document_id": "KB-006",
+        "title": "Order Cancellation Policy",
+        "topic": "order-cancellation policy",
+        "source_file": "KB-006-order-cancellation.md",
+        "text": "Once an order moves to Shipped, cancellation is not available and the customer must use the return process after delivery if eligible.",
+        "l2_distance": 0.64372718334198,
+        "confidence": 0.67813640832901
+      }
+    ],
+    "supporting_context": "Partial cancellation of multi-item orders is allowed only while the order remains in Placed status. Orders in Placed status may be cancelled without charge within 60 minutes of order confirmation or before warehouse packing begins, whichever occurs first. Once an order moves to Shipped, cancellation is not available and the customer must use the return process after delivery if eligible.",
+    "answer": "According to Order Cancellation Policy (KB-006): Partial cancellation of multi-item orders is allowed only while the order remains in Placed status. Orders in Placed status may be cancelled without charge within 60 minutes of order confirmation or before warehouse packing begins, whichever occurs first. Once an order moves to Shipped, cancellation is not available and the customer must use the return process after delivery if eligible."
+  },
+  {
+    "query": "How does size exchange work for Apparel and Footwear?",
+    "collection": "nykaa_sentence_chunks",
+    "top_k": 3,
+    "threshold_max_l2_distance": 1.1129,
+    "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+    "fallback_fired": false,
+    "top1_l2_distance": 0.5841301679611206,
+    "top1_confidence": 0.7079349160194397,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "KB-009-sentence-000",
+        "document_id": "KB-009",
+        "title": "Size Exchange Policy",
+        "topic": "size-exchange policy",
+        "source_file": "KB-009-size-exchange.md",
+        "text": "Size exchange is available only for Apparel and Footwear categories within 10 days of delivery when the requested alternate size is in stock.",
+        "l2_distance": 0.5841301679611206,
+        "confidence": 0.7079349160194397
+      },
+      {
+        "chunk_id": "KB-009-sentence-002",
+        "document_id": "KB-009",
+        "title": "Size Exchange Policy",
+        "topic": "size-exchange policy",
+        "source_file": "KB-009-size-exchange.md",
+        "text": "Exchanges are processed as reverse pickup followed by forward shipment of the new size.",
+        "l2_distance": 0.985249400138855,
+        "confidence": 0.5073752999305725
+      },
+      {
+        "chunk_id": "KB-009-sentence-001",
+        "document_id": "KB-009",
+        "title": "Size Exchange Policy",
+        "topic": "size-exchange policy",
+        "source_file": "KB-009-size-exchange.md",
+        "text": "One free size exchange is permitted per order line item; the original item must be unworn with tags attached.",
+        "l2_distance": 1.0586984157562256,
+        "confidence": 0.4706507921218872
+      }
+    ],
+    "supporting_context": "Size exchange is available only for Apparel and Footwear categories within 10 days of delivery when the requested alternate size is in stock. Exchanges are processed as reverse pickup followed by forward shipment of the new size. One free size exchange is permitted per order line item; the original item must be unworn with tags attached.",
+    "answer": "According to Size Exchange Policy (KB-009): Size exchange is available only for Apparel and Footwear categories within 10 days of delivery when the requested alternate size is in stock. Exchanges are processed as reverse pickup followed by forward shipment of the new size. One free size exchange is permitted per order line item; the original item must be unworn with tags attached."
+  },
+  {
+    "query": "How do I file US federal income tax as a nonresident alien?",
+    "collection": "nykaa_sentence_chunks",
+    "top_k": 3,
+    "threshold_max_l2_distance": 1.1129,
+    "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+    "fallback_fired": true,
+    "top1_l2_distance": 1.7500718832015991,
+    "top1_confidence": 0.12496405839920044,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "KB-004-sentence-002",
+        "document_id": "KB-004",
+        "title": "Reverse Pickup Eligibility",
+        "topic": "reverse-pickup eligibility",
+        "source_file": "KB-004-reverse-pickup-eligibility.md",
+        "text": "Items must be packed securely with the invoice copy placed inside the package.",
+        "l2_distance": 1.7500718832015991,
+        "confidence": 0.12496405839920044
+      },
+      {
+        "chunk_id": "KB-007-sentence-002",
+        "document_id": "KB-007",
+        "title": "Loyalty Points Redemption Policy",
+        "topic": "loyalty-points redemption policy",
+        "source_file": "KB-007-loyalty-points-redemption.md",
+        "text": "Points cannot be redeemed on cash-on-delivery orders or on gift-card-only purchases.",
+        "l2_distance": 1.7876782417297363,
+        "confidence": 0.10616087913513184
+      },
+      {
+        "chunk_id": "KB-011-sentence-003",
+        "document_id": "KB-011",
+        "title": "International Shipping Restrictions",
+        "topic": "international shipping restrictions",
+        "source_file": "KB-011-international-shipping.md",
+        "text": "Customers traveling abroad should ship to a domestic address or defer purchase until they return.",
+        "l2_distance": 1.8293344974517822,
+        "confidence": 0.08533275127410889
+      }
+    ],
+    "supporting_context": "",
+    "answer": "I don't know based on the available policy knowledge base."
+  }
+]

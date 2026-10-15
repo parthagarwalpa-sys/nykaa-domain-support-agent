@@ -1,0 +1,10 @@
+{
+  "mask_events": [
+    {
+      "kind": "card_last4",
+      "rule_id": "card_ending"
+    }
+  ],
+  "raw_test_input": "Refund to card ending 5678 was declined.",
+  "sanitized_text": "Refund to card ending **** was declined."
+}

@@ -1,0 +1,71 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 15 items
+
+tests/test_autogen_review_task14.py::test_team_has_exactly_two_agents PASSED [  6%]
+tests/test_autogen_review_task14.py::test_team_max_turns_is_two PASSED   [ 13%]
+tests/test_autogen_review_task14.py::test_final_editor_uses_output_content_type PASSED [ 20%]
+tests/test_autogen_review_task14.py::test_team_registers_structured_message_verdict PASSED [ 26%]
+tests/test_autogen_review_task14.py::test_actual_autogen_team_execution_occurs PASSED [ 33%]
+tests/test_autogen_review_task14.py::test_grounded_draft_is_approved PASSED [ 40%]
+tests/test_autogen_review_task14.py::test_approved_draft_unchanged_exactly PASSED [ 46%]
+tests/test_autogen_review_task14.py::test_corrupted_draft_not_approved PASSED [ 53%]
+tests/test_autogen_review_task14.py::test_corrupted_unsupported_claim_removed_or_revised PASSED [ 60%]
+tests/test_autogen_review_task14.py::test_verdict_validates_against_pydantic PASSED [ 66%]
+tests/test_autogen_review_task14.py::test_review_input_includes_retrieved_context PASSED [ 73%]
+tests/test_autogen_review_task14.py::test_deterministic_mock_llm_client_used PASSED [ 80%]
+tests/test_autogen_review_task14.py::test_no_external_api_key_required PASSED [ 86%]
+tests/test_autogen_review_task14.py::test_crewai_flow_still_functional_after_integration PASSED [ 93%]
+tests/test_autogen_review_task14.py::test_task13_evaluation_still_passes PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_autogen_review_task14.py: 35 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_autogen_review_task14.py::test_grounded_draft_is_approved
+tests/test_autogen_review_task14.py::test_approved_draft_unchanged_exactly
+tests/test_autogen_review_task14.py::test_review_input_includes_retrieved_context
+tests/test_autogen_review_task14.py::test_no_external_api_key_required
+tests/test_autogen_review_task14.py::test_crewai_flow_still_functional_after_integration
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_autogen_review_task14.py: 30 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_autogen_review_task14.py: 15 warnings
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 15 passed, 175 warnings in 13.19s ======================

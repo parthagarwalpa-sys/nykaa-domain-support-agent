@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "methodology": "Manual document-level relevance labels from approved fictional KB policies (KB-001 through KB-012). Labels were chosen before retrieval scoring and are not derived from Chroma results. Each evaluation query maps to the primary policy document that directly answers the question.",
+  "evaluation_queries_source": "app.grounded_generation.DEMONSTRATION_IN_SCOPE_QUERIES",
+  "top_k": 3,
+  "entries": [
+    {
+      "query_id": "eval_01_beauty_return",
+      "topic": "Beauty return eligibility",
+      "query_text": "What is the return eligibility for unused sealed Beauty products?",
+      "relevant_document_ids": ["KB-001"],
+      "relevance_rationale": "KB-001 Return Window by Product Category defines Beauty sealed/unused return rules."
+    },
+    {
+      "query_id": "eval_02_cod_refund",
+      "topic": "COD refund timeline",
+      "query_text": "What is the timeline for COD refunds to a bank account?",
+      "relevant_document_ids": ["KB-002"],
+      "relevance_rationale": "KB-002 Cash on Delivery Refund Timelines covers bank transfer timing."
+    },
+    {
+      "query_id": "eval_03_delivery_sla",
+      "topic": "Express delivery SLA",
+      "query_text": "What is the express delivery SLA for metro tier-1 cities?",
+      "relevant_document_ids": ["KB-003"],
+      "relevance_rationale": "KB-003 Standard Delivery Service Levels defines metro express SLAs."
+    },
+    {
+      "query_id": "eval_04_cancellation_placed",
+      "topic": "Order cancellation while Placed",
+      "query_text": "What is the cancellation policy for orders still in Placed status?",
+      "relevant_document_ids": ["KB-006"],
+      "relevance_rationale": "KB-006 Order Cancellation Policy covers Placed-status cancellation."
+    },
+    {
+      "query_id": "eval_05_size_exchange",
+      "topic": "Apparel/Footwear size exchange",
+      "query_text": "How does size exchange work for Apparel and Footwear?",
+      "relevant_document_ids": ["KB-009"],
+      "relevance_rationale": "KB-009 Size Exchange Policy defines Apparel and Footwear exchange rules."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "content": "Review the CrewAI composer draft against supplied source context.\nOriginal user query: What is the return eligibility for unused sealed Beauty products?\nResponse type: policy\nSource document IDs: KB-001, KB-005, KB-010\nRetrieved policy context: ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\nVerified order lookup: N/A\nDraft answer: According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\n",
+      "source": "user",
+      "type": "TextMessage"
+    },
+    {
+      "content": "Policy review: the draft appears consistent with the retrieved context.",
+      "source": "policy_compliance_reviewer",
+      "type": "TextMessage"
+    },
+    {
+      "content": {
+        "approved": true,
+        "final_answer": "According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+        "reason": "Draft aligns with supplied retrieved context."
+      },
+      "source": "final_editor",
+      "type": "StructuredMessage[ReviewVerdict]"
+    }
+  ],
+  "stop_reason": "Maximum number of turns 2 reached."
+}

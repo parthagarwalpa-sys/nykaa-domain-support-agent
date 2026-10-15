@@ -1,0 +1,4 @@
+{
+  "level": "Medium",
+  "rationale": "This capstone system is classified as Medium risk because it automates customer-support interactions: grounded policy guidance from a demo knowledge base, synthetic order-status lookups, and escalation signals that could influence support handling. It does not make high-stakes medical, employment, credit, or live financial-account decisions, so it is above Low (simple summarization) but below High (sensitive regulated decision domains)."
+}

@@ -1,0 +1,17 @@
+﻿=== Nykaa Capstone Synthetic ORDERS Report ===
+Total records: 40
+Random seed: 20261013
+Category counts:
+  Apparel: 6
+  Electronics: 6
+  Home: 13
+  Footwear: 12
+  Beauty: 3
+Status counts:
+  Placed: 3
+  Shipped: 8
+  Delivered: 17
+  Returned: 5
+  Refunded: 7
+Delayed shipments: 9 (22.5%)
+Order value INR ù configured range: 299û24999; observed minûmax: 961û24999

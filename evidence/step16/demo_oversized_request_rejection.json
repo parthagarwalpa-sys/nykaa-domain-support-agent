@@ -1,0 +1,13 @@
+{
+  "autogen_review": null,
+  "budget_assessment": {
+    "budget_cap_tokens": 1024,
+    "estimated_tokens": 1250,
+    "sanitized_text_length": 5000,
+    "within_budget": false
+  },
+  "kickoff_used": false,
+  "order_tool_call_count": 0,
+  "outcome": "request_budget_exceeded",
+  "rag_tool_call_count": 0
+}

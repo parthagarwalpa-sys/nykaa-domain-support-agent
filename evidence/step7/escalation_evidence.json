@@ -1,0 +1,99 @@
+{
+  "formula": "escalation_score = clamp_0_1(0.6 * delayed_signal + 0.4 * normalized_age)",
+  "delayed_signal": "1.0 if delayed_shipment else 0.0",
+  "normalized_age": "days_since_created / 30",
+  "weights": {
+    "delayed_shipment": 0.6,
+    "normalized_age": 0.4
+  },
+  "threshold_percentile": 80.0,
+  "threshold": 0.616,
+  "threshold_rationale": "Escalation threshold is the 80th percentile of escalation_score over all 40 ORDERS records (seed 20261013), flagging roughly the highest-risk fifth of orders for human review.",
+  "score_distribution": {
+    "count": 40,
+    "min": 0.0133,
+    "max": 0.9867,
+    "mean": 0.3263,
+    "p50": 0.2467,
+    "p80": 0.616,
+    "p90": 0.8294,
+    "scores": [
+      0.0133,
+      0.0267,
+      0.04,
+      0.04,
+      0.0533,
+      0.0533,
+      0.0667,
+      0.08,
+      0.1067,
+      0.12,
+      0.1333,
+      0.1333,
+      0.1333,
+      0.16,
+      0.16,
+      0.16,
+      0.1733,
+      0.2,
+      0.24,
+      0.24,
+      0.2533,
+      0.2533,
+      0.2533,
+      0.2667,
+      0.2667,
+      0.32,
+      0.32,
+      0.3467,
+      0.3467,
+      0.3867,
+      0.4,
+      0.6133,
+      0.6267,
+      0.7733,
+      0.7867,
+      0.8267,
+      0.8533,
+      0.9067,
+      0.9333,
+      0.9867
+    ]
+  },
+  "samples": {
+    "valid_lookup": {
+      "record_id": "NYK-20261013-0001",
+      "status": "Shipped",
+      "order_value_inr": 23425,
+      "escalation_score": 0.1333,
+      "escalation_threshold": 0.616,
+      "escalation_recommended": false,
+      "days_since_created": 10,
+      "delayed_shipment": false
+    },
+    "escalated_lookup": {
+      "record_id": "NYK-20261013-0005",
+      "status": "Shipped",
+      "order_value_inr": 16336,
+      "escalation_score": 0.9067,
+      "escalation_threshold": 0.616,
+      "escalation_recommended": true,
+      "days_since_created": 23,
+      "delayed_shipment": true
+    },
+    "non_escalated_lookup": {
+      "record_id": "NYK-20261013-0014",
+      "status": "Returned",
+      "order_value_inr": 7883,
+      "escalation_score": 0.0133,
+      "escalation_threshold": 0.616,
+      "escalation_recommended": false,
+      "days_since_created": 1,
+      "delayed_shipment": false
+    },
+    "unknown_record_id": {
+      "type": "OrderRecordNotFoundError",
+      "message": "Order record not found: NYK-DOES-NOT-EXIST"
+    }
+  }
+}

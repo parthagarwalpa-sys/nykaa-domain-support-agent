@@ -1,0 +1,17 @@
+{
+  "kickoff_output": "Order lookup result: {\"escalation_score\": 0.79, \"order_value_inr\": 2499, \"proof_token\": \"computed-NYK-SMOKE-001-Shipped\", \"record_id\": \"NYK-SMOKE-001\", \"status\": \"Shipped\"}",
+  "tool_call_count": 1,
+  "tool_trace": [
+    {
+      "record_id": "NYK-SMOKE-001",
+      "payload": {
+        "record_id": "NYK-SMOKE-001",
+        "status": "Shipped",
+        "order_value_inr": 2499,
+        "escalation_score": 0.79,
+        "proof_token": "computed-NYK-SMOKE-001-Shipped"
+      }
+    }
+  ],
+  "mock_llm_calls": 2
+}

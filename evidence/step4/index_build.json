@@ -1,0 +1,95 @@
+{
+  "build": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "document_count": 12,
+    "fixed_chunk_count": 39,
+    "sentence_chunk_count": 49,
+    "collections": {
+      "nykaa_fixed_chunks": 39,
+      "nykaa_sentence_chunks": 49
+    },
+    "fixed_chunk_size": 220,
+    "fixed_overlap": 60,
+    "persist_dir": "C:\\Users\\Parth\\Projects\\MASAI_NYKAA_CAPSTONE\\chroma_data"
+  },
+  "sample_retrieval": {
+    "nykaa_fixed_chunks": {
+      "query": "What is the return window for Beauty products?",
+      "ids": [
+        [
+          "KB-001-fixed-001",
+          "KB-001-fixed-000"
+        ]
+      ],
+      "documents": [
+        [
+          "ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit",
+          "This fictional demo storefront allows returns within category-specific windows counted from the delivery date. Apparel and Footwear may be returned within 15 days if items are unworn, unwashed, and include original tags"
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "topic": "return window by product category",
+            "title": "Return Window by Product Category",
+            "source_file": "KB-001-return-window.md",
+            "document_id": "KB-001",
+            "chunk_strategy": "fixed"
+          },
+          {
+            "source_file": "KB-001-return-window.md",
+            "topic": "return window by product category",
+            "title": "Return Window by Product Category",
+            "document_id": "KB-001",
+            "chunk_strategy": "fixed"
+          }
+        ]
+      ],
+      "distances": [
+        [
+          0.8038398027420044,
+          0.9204688668251038
+        ]
+      ]
+    },
+    "nykaa_sentence_chunks": {
+      "query": "How are cash on delivery refunds processed?",
+      "ids": [
+        [
+          "KB-002-sentence-000",
+          "KB-002-sentence-003"
+        ]
+      ],
+      "documents": [
+        [
+          "For cash-on-delivery orders, refunds are initiated only after the returned product passes quality inspection at our warehouse.",
+          "Customers receive SMS and email notifications when the refund is initiated and when it is marked completed."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "chunk_strategy": "sentence",
+            "topic": "COD refund timelines",
+            "title": "Cash on Delivery Refund Timelines",
+            "source_file": "KB-002-cod-refund-timelines.md",
+            "document_id": "KB-002"
+          },
+          {
+            "topic": "COD refund timelines",
+            "document_id": "KB-002",
+            "title": "Cash on Delivery Refund Timelines",
+            "source_file": "KB-002-cod-refund-timelines.md",
+            "chunk_strategy": "sentence"
+          }
+        ]
+      ],
+      "distances": [
+        [
+          0.5646734833717346,
+          0.9303528070449829
+        ]
+      ]
+    }
+  }
+}

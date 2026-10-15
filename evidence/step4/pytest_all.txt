@@ -1,0 +1,83 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE
+configfile: pytest.ini
+plugins: anyio-4.15.1, langsmith-0.14.8, platformdirs-4.13.0
+collecting ... collected 28 items
+
+tests/test_rag_index.py::test_load_twelve_policy_documents PASSED        [  3%]
+tests/test_rag_index.py::test_fixed_and_sentence_chunking_non_empty_and_deterministic PASSED [  7%]
+tests/test_rag_index.py::test_chunks_map_to_parent_documents PASSED      [ 10%]
+tests/test_rag_index.py::test_sentence_splitter_preserves_whole_sentences PASSED [ 14%]
+tests/test_rag_index.py::test_upsert_is_used_during_rebuild PASSED       [ 17%]
+tests/test_rag_index.py::test_two_separate_collections_with_expected_counts PASSED [ 21%]
+tests/test_rag_index.py::test_sample_retrieval_returns_parent_metadata PASSED [ 25%]
+tests/test_rag_index.py::test_chunk_parameters_documented PASSED         [ 28%]
+tests/test_dataset.py::test_orders_count_and_fields PASSED               [ 32%]
+tests/test_dataset.py::test_record_ids_unique PASSED                     [ 35%]
+tests/test_dataset.py::test_categories_valid_and_minimum_coverage PASSED [ 39%]
+tests/test_dataset.py::test_statuses_valid_and_minimum_coverage PASSED   [ 42%]
+tests/test_dataset.py::test_order_values_in_documented_range PASSED      [ 46%]
+tests/test_dataset.py::test_days_since_created_range PASSED              [ 50%]
+tests/test_dataset.py::test_delayed_shipment_boolean_and_percentage_band PASSED [ 53%]
+tests/test_dataset.py::test_deterministic_regeneration PASSED            [ 57%]
+tests/test_dataset.py::test_delayed_probability_documented PASSED        [ 60%]
+tests/test_knowledge_base_drafts.py::test_exactly_twelve_required_files_exist PASSED [ 64%]
+tests/test_knowledge_base_drafts.py::test_all_topics_represented_once PASSED [ 67%]
+tests/test_knowledge_base_drafts.py::test_document_ids_unique_and_match_filenames PASSED [ 71%]
+tests/test_knowledge_base_drafts.py::test_metadata_and_policy_body_present PASSED [ 75%]
+tests/test_knowledge_base_drafts.py::test_policy_body_sentence_counts PASSED [ 78%]
+tests/test_step1b_smoke.py::test_mock_crew_llm_instantiates_without_api_keys PASSED [ 82%]
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool PASSED [ 85%]
+tests/test_step1b_smoke.py::test_autogen_two_agent_review_approves_supported_draft PASSED [ 89%]
+tests/test_step1b_smoke.py::test_autogen_two_agent_review_revises_unsupported_draft PASSED [ 92%]
+tests/test_step1b_smoke.py::test_offline_modules_do_not_require_api_credentials PASSED [ 96%]
+tests/test_step1b_smoke.py::test_import_smoke_for_mandatory_packages PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:650: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:372: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    crew.function_calling_llm,
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crews\utils.py:87: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if not agent.function_calling_llm:  # type: ignore[attr-defined]
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\agent\core.py:1300: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    function_calling_llm=self.function_calling_llm,
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1675: DeprecationWarning: deprecated
+    if hasattr(agent, "allow_code_execution") and getattr(
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1682: DeprecationWarning: deprecated
+    and hasattr(agent, "multimodal")
+
+tests/test_step1b_smoke.py::test_crewai_kickoff_invokes_order_lookup_tool
+  C:\Users\Parth\Projects\MASAI_NYKAA_CAPSTONE\.venv\Lib\site-packages\crewai\crew.py:1683: DeprecationWarning: deprecated
+    and getattr(agent, "multimodal", False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 28 passed, 13 warnings in 19.47s =======================

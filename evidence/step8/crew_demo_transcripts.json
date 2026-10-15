@@ -1,0 +1,121 @@
+{
+  "crew_topology": {
+    "agent_count": 3,
+    "agents": [
+      {
+        "role": "Retrieval Agent",
+        "tools": [
+          "rag_policy_lookup"
+        ]
+      },
+      {
+        "role": "Order Lookup Agent",
+        "tools": [
+          "lookup_order_status"
+        ]
+      },
+      {
+        "role": "Response Composer Agent",
+        "tools": []
+      }
+    ],
+    "process": "sequential",
+    "rag_collection": "nykaa_fixed_chunks",
+    "llm": "NykaaMockCrewLLM (crewai.llms.base_llm.BaseLLM)"
+  },
+  "policy_query_demo": {
+    "query": "What is the return eligibility for unused sealed Beauty products?",
+    "kickoff_output": "Current Task: Draft the final customer-facing answer for: What is the return eligibility for unused sealed Beauty products?\nUse ONLY upstream retrieval/lookup outputs. Do not invent policy or order facts.\n\nThis is the expected criteria for your final answer: Single combined draft answer grounded in tool outputs.\nyou MUST return the actual complete content as the final answer, not a summary.\n\nThis is the context you're working with:\n{\"answer\": \"According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\", \"collection\": \"nykaa_fixed_chunks\", \"collection_used\": \"nykaa_fixed_chunks\", \"fallback_fired\": false, \"query\": \"Current Task: Process the customer request: What is the return eligibility for unused sealed Beauty products?\\nIf this is a policy question, you MUST call rag_policy_lookup before answering.\\n\\nThis is the expected criteria for your final answer: Grounded policy retrieval JSON or explicit skip note.\\nyou MUST return the actual complete content as the final answer, not a summary.\\n\\nBegin! This is VERY important to you, use the tools available and give your best Final Answer, your job depends on it!\\n\\nThought:\", \"retrieved_chunks\": [{\"chunk_id\": \"KB-001-fixed-001\", \"confidence\": 0.4615707993507385, \"document_id\": \"KB-001\", \"l2_distance\": 1.076858401298523, \"source_file\": \"KB-001-return-window.md\", \"text\": \"ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit\", \"title\": \"Return Window by Product Category\", \"topic\": \"return window by product category\"}, {\"chunk_id\": \"KB-010-fixed-002\", \"confidence\": 0.4602676033973694, \"document_id\": \"KB-010\", \"l2_distance\": 1.0794647932052612, \"source_file\": \"KB-010-damaged-item-claim.md\", \"text\": \"o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da\", \"title\": \"Damaged Item Claim Process\", \"topic\": \"damaged-item claim process\"}, {\"chunk_id\": \"KB-005-fixed-001\", \"confidence\": 0.4478551149368286, \"document_id\": \"KB-005\", \"l2_distance\": 1.1042897701263428, \"source_file\": \"KB-005-warranty-terms.md\", \"text\": \"and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\", \"title\": \"Warranty Terms by Category\", \"topic\": \"warranty terms by category\"}], \"supporting_context\": \"ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl\", \"threshold_max_l2_distance\": 1.1129, \"threshold_rationale\": \"Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).\", \"top1_confidence\": 0.4615707993507385, \"top1_l2_distance\": 1.076858401298523, \"top_k\": 3}\n\n----------\n\nOrder lookup skipped \u2014 no record_id in query.\n\nProvide your complete response:",
+    "kickoff_used": true,
+    "rag_collection": "nykaa_fixed_chunks",
+    "mock_llm_calls": 4,
+    "rag_tool_call_count": 1,
+    "order_tool_call_count": 0,
+    "rag_tool_trace": [
+      {
+        "policy_question": "Current Task: Process the customer request: What is the return eligibility for unused sealed Beauty products?\nIf this is a policy question, you MUST call rag_policy_lookup before answering.\n\nThis is the expected criteria for your final answer: Grounded policy retrieval JSON or explicit skip note.\nyou MUST return the actual complete content as the final answer, not a summary.\n\nBegin! This is VERY important to you, use the tools available and give your best Final Answer, your job depends on it!\n\nThought:",
+        "payload": {
+          "query": "Current Task: Process the customer request: What is the return eligibility for unused sealed Beauty products?\nIf this is a policy question, you MUST call rag_policy_lookup before answering.\n\nThis is the expected criteria for your final answer: Grounded policy retrieval JSON or explicit skip note.\nyou MUST return the actual complete content as the final answer, not a summary.\n\nBegin! This is VERY important to you, use the tools available and give your best Final Answer, your job depends on it!\n\nThought:",
+          "collection": "nykaa_fixed_chunks",
+          "top_k": 3,
+          "threshold_max_l2_distance": 1.1129,
+          "threshold_rationale": "Observed in-scope top-1 L2 distances up to 0.7852; out-of-scope top-1 L2 distances from 1.4406 upward. Selected max_top1_l2_distance=1.1129 as the midpoint between the two clusters (l2 on sentence-transformers/all-MiniLM-L6-v2 with normalize_embeddings=True). Cosine interpretation: cosine_similarity = 1 - raw_chroma_l2_squared / 2  (unit-normalized embeddings).",
+          "fallback_fired": false,
+          "top1_l2_distance": 1.076858401298523,
+          "top1_confidence": 0.4615707993507385,
+          "retrieved_chunks": [
+            {
+              "chunk_id": "KB-001-fixed-001",
+              "document_id": "KB-001",
+              "title": "Return Window by Product Category",
+              "topic": "return window by product category",
+              "source_file": "KB-001-return-window.md",
+              "text": "ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit",
+              "l2_distance": 1.076858401298523,
+              "confidence": 0.4615707993507385
+            },
+            {
+              "chunk_id": "KB-010-fixed-002",
+              "document_id": "KB-010",
+              "title": "Damaged Item Claim Process",
+              "topic": "damaged-item claim process",
+              "source_file": "KB-010-damaged-item-claim.md",
+              "text": "o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da",
+              "l2_distance": 1.0794647932052612,
+              "confidence": 0.4602676033973694
+            },
+            {
+              "chunk_id": "KB-005-fixed-001",
+              "document_id": "KB-005",
+              "title": "Warranty Terms by Category",
+              "topic": "warranty terms by category",
+              "source_file": "KB-005-warranty-terms.md",
+              "text": "and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+              "l2_distance": 1.1042897701263428,
+              "confidence": 0.4478551149368286
+            }
+          ],
+          "supporting_context": "ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+          "answer": "According to Return Window by Product Category (KB-001): ys if items are unworn, unwashed, and include original tags and packaging. Beauty products may be returned within 7 days only when the seal is intact and the item is unused. Electronics and Home items may be returned wit o. Approved claims receive replacement shipment or refund after inspection; customers may be asked to return the damaged unit via reverse pickup. Liquid or sealed Beauty items with broken seals are not eligible unless da and a valid serial number where applicable. Beauty, Apparel, and Footwear items are sold without a long-term warranty and rely on the standard return window for quality issues discovered near delivery. Home products incl",
+          "collection_used": "nykaa_fixed_chunks"
+        }
+      }
+    ],
+    "order_tool_trace": [],
+    "agent_roles": [
+      "Retrieval Agent",
+      "Order Lookup Agent",
+      "Response Composer Agent"
+    ]
+  },
+  "order_query_demo": {
+    "query": "Check the status of order NYK-20261013-0005.",
+    "kickoff_output": "Current Task: Draft the final customer-facing answer for: Check the status of order NYK-20261013-0005.\nUse ONLY upstream retrieval/lookup outputs. Do not invent policy or order facts.\n\nThis is the expected criteria for your final answer: Single combined draft answer grounded in tool outputs.\nyou MUST return the actual complete content as the final answer, not a summary.\n\nThis is the context you're working with:\nRetrieval skipped \u2014 not a policy question.\n\n----------\n\n{\"days_since_created\": 23, \"delayed_shipment\": true, \"escalation_recommended\": true, \"escalation_score\": 0.9067, \"escalation_threshold\": 0.616, \"order_value_inr\": 16336, \"record_id\": \"NYK-20261013-0005\", \"status\": \"Shipped\"}\n\nProvide your complete response:",
+    "kickoff_used": true,
+    "rag_collection": "nykaa_fixed_chunks",
+    "mock_llm_calls": 4,
+    "rag_tool_call_count": 0,
+    "order_tool_call_count": 1,
+    "rag_tool_trace": [],
+    "order_tool_trace": [
+      {
+        "record_id": "NYK-20261013-0005",
+        "payload": {
+          "record_id": "NYK-20261013-0005",
+          "status": "Shipped",
+          "order_value_inr": 16336,
+          "escalation_score": 0.9067,
+          "escalation_threshold": 0.616,
+          "escalation_recommended": true,
+          "days_since_created": 23,
+          "delayed_shipment": true
+        }
+      }
+    ],
+    "agent_roles": [
+      "Retrieval Agent",
+      "Order Lookup Agent",
+      "Response Composer Agent"
+    ]
+  }
+}

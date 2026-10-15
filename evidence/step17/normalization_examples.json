@@ -1,0 +1,8 @@
+{
+  "cache_key": "nykaa_fixed_chunks|k=3|what is the return eligibility for beauty products?",
+  "normalized_a": "what is the return eligibility for beauty products?",
+  "normalized_b": "what is the return eligibility for beauty products?",
+  "punctuation_note": "Punctuation is not altered; only case and whitespace collapse.",
+  "raw_a": "What is the return eligibility for Beauty products?",
+  "raw_b": "  what   is the return eligibility for beauty products?  "
+}

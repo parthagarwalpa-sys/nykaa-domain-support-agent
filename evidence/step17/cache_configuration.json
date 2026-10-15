@@ -1,0 +1,6 @@
+{
+  "collection": "nykaa_fixed_chunks",
+  "scope": "Task 4 generate_grounded_answer only",
+  "storage": "in-memory dict (process local)",
+  "top_k": 3
+}
